@@ -1,6 +1,9 @@
 # stablebl_safedagger
 
 ## Getting Started
+
+we need to patch saved model under python 3.6/3.7 to load them
+
 1. Clone this repository
 
 2. Install dependencies
@@ -23,14 +26,15 @@ pip install -r requirements.txt
       ```sh
       export LD_LIBRARY_PATH=~/.mujoco/mjpro150/bin/
       ```
-4.
 
 ## Troubleshooting
-If the command line show you t
-cython, glfw, imageio, pyglet
+If you have this error : ImportError: No module named cython, glfw, imageio, pyglet  
+using 'pip install' to download each module
 
-If you have this error
-ValueError: unsupported pickle protocol: 5​
+If you have this error : ValueError: unsupported pickle protocol: 5
 ```sh
 pip install cloudpickle==1.6.0
 ```
+
+## Reference
+https://stable-baselines3.readthedocs.io/en/v1.0/guide/rl_zoo.html
