@@ -40,9 +40,9 @@ pip install -r requirements.txt
 ## Enjoy a Trained Agent
 
 **example)**
-
+```sh
 python3 expert_bipedwalker.py --algo tqc --env BipedalWalker-v3 --no-render --folder rl-trained-agents/ -n 1000
-
+```
 --algo : 사용가능한 rl 알고리즘은 [rl-trained-agents](https://github.com/DLR-RM/rl-trained-agents)에서 확인가능.
 
 --env : 실행환경 결정
