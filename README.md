@@ -27,6 +27,11 @@ pip install -r requirements.txt
       export LD_LIBRARY_PATH=~/.mujoco/mjpro150/bin/
       ```
 
+## file explanation
+
+robot.py
+get random action
+
 ## Troubleshooting
 If you have this error : ImportError: No module named cython, glfw, imageio, pyglet  
 using 'pip install' to download each module
