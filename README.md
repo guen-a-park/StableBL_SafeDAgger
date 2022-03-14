@@ -41,5 +41,8 @@ If you have this error : ValueError: unsupported pickle protocol: 5
 pip install cloudpickle==1.6.0
 ```
 
+**Note**: If you have problem with the line "you need to install mujoco_py..." 
+check https://github.com/openai/mujoco-py/ and see the **Ubuntu installation troubleshooting**
+
 ## Reference
 https://stable-baselines3.readthedocs.io/en/v1.0/guide/rl_zoo.html
