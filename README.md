@@ -1,4 +1,4 @@
-# stablebl_safedagger
+# StableBL_SafeDAgger
 
 expert_pickandplace.py and safe_pickandplace.py need python 3.6/3.7
 
