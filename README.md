@@ -27,13 +27,41 @@ pip install -r requirements.txt
       export LD_LIBRARY_PATH=~/.mujoco/mjpro150/bin/
       ```
 
-## file explanation
+## File explanation
 
 - **robot.py** : random action 확인가능
-- 
 
-## function explanation
-python3 enjoy.py --algo tqc --env FetchPickAndPlace-v1 --no-render --folder rl-trained-agents/ -n 1000
+- **expert_pickandplace.py**, **expert_bipedwalker.py** : expert policy 실행 및 expert data 저장
+
+- **safe_bipedwalker.py**, **safe_pickandplace.py** : bc policy 생성, safe dagger policy 생성
+
+  
+
+## Enjoy a Trained Agent
+
+**example)**
+
+python3 expert_bipedwalker.py --algo tqc --env BipedalWalker-v3 --no-render --folder rl-trained-agents/ -n 1000
+
+--algo : 사용가능한 rl 알고리즘은 [rl-trained-agents](https://github.com/DLR-RM/rl-trained-agents)에서 확인가능.
+
+--env : 실행환경 결정
+
+--no-render : rendering 원하지 않을 경우 삽입
+
+-n : 저장/실행하고 싶은 data의 수 지정
+
+
+
+## Run SafeDAgger
+
+models 폴더 안의 bc policy와 exp_data 폴더의 expert data 유무 확인. 
+
+- expert data가 없다면  **expert_bipedwalker.py** 또는 **expert_pickandplace.py**부터 실행해 데이터 생성
+
+- bc policy가 없다면 **safe_bipedwalker.py**에서 *behavior_cloning()* 함수를 실행해 bc policy 생성 
+
+
 
 
 ## Troubleshooting
