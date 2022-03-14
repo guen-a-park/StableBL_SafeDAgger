@@ -78,3 +78,5 @@ check https://github.com/openai/mujoco-py/ and see the **Ubuntu installation tro
 
 ## Reference
 https://stable-baselines3.readthedocs.io/en/v1.0/guide/rl_zoo.html
+https://github.com/DLR-RM/rl-baselines3-zoo
+
