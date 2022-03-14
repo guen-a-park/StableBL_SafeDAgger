@@ -2,8 +2,6 @@
 
 ## Getting Started
 
-we need to patch saved model under python 3.6/3.7 to load them
-
 1. Clone this repository
 
 2. Install dependencies
