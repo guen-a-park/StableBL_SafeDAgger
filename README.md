@@ -29,8 +29,12 @@ pip install -r requirements.txt
 
 ## file explanation
 
-robot.py
-get random action
+- **robot.py** : random action 확인가능
+- 
+
+## function explanation
+python3 enjoy.py --algo tqc --env FetchPickAndPlace-v1 --no-render --folder rl-trained-agents/ -n 1000
+
 
 ## Troubleshooting
 If you have this error : ImportError: No module named cython, glfw, imageio, pyglet  
