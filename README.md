@@ -5,7 +5,7 @@ expert_pickandplace.py and safe_pickandplace.py need python 3.6/3.7
 ## Getting Started
 
 1. Clone this repository  
-rl trained agent 다운을 위해서는 아래 명령어로 실행(--recursive 
+rl trained agent 다운을 위해서는 아래 명령어로 실행(--recursive) 
 ```sh
 git clone --recursive https://github.com/guen-a-park/StableBL_SafeDAgger.git
 ```
